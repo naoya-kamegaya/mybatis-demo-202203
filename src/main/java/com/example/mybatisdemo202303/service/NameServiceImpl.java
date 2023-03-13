@@ -1,5 +1,6 @@
 package com.example.mybatisdemo202303;
 
+import com.example.mybatisdemo202303.entity.Name;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
