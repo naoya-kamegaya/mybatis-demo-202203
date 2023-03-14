@@ -1,9 +1,7 @@
 package com.example.mybatisdemo202303.service;
 
 import com.example.mybatisdemo202303.entity.Movie;
-import com.example.mybatisdemo202303.entity.Name;
 import com.example.mybatisdemo202303.mapper.MovieMapper;
-import com.example.mybatisdemo202303.mapper.NameMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,11 +15,11 @@ public class MovieServiceImpl implements MovieService {
     this.movieMapper = movieMapper;
   }
 
-  public List<Movie> findAll(){
+  public List<Movie> findAll() {
     return movieMapper.findAll();
   }
 
-  public List<Movie> findPublishedYear(String publishedYear){
+  public List<Movie> findByPublishedYear(String publishedYear) {
     return movieMapper.findPublishedYear(publishedYear);
   }
 }

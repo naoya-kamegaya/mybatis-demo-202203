@@ -8,5 +8,5 @@ public interface MovieService {
 
   List<Movie> findAll();
 
-  List<Movie> findPublishedYear(String publishedYear);
+  List<Movie> findByPublishedYear(String publishedYear);
 }
