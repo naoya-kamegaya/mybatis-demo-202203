@@ -19,7 +19,7 @@ public class MovieServiceImpl implements MovieService {
     return movieMapper.findAll();
   }
 
-  public List<Movie> findByPublishedYear(String publishedYear) {
+  public List<Movie> findByPublishedYear(Integer publishedYear) {
     return movieMapper.findByPublishedYear(publishedYear);
   }
 }

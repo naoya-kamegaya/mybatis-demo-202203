@@ -5,7 +5,7 @@ public class Movie {
   private String name;
   private int publishedYear;
 
-  public Movie(int id, String name, int publishedYear) {
+  public Movie(int id, String name, Integer publishedYear) {
     this.id = id;
     this.name = name;
     this.publishedYear = publishedYear;
