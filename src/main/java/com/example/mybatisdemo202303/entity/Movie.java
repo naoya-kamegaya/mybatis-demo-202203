@@ -1,16 +1,14 @@
 package com.example.mybatisdemo202303.entity;
 
-public class Name {
+public class Movie {
   private int id;
   private String name;
+  private int publishedYear;
 
-  private String address;
-
-  private String bankAccountInfo;
-
-  public Name(int id, String name) {
+  public Movie(int id, String name, int publishedYear) {
     this.id = id;
     this.name = name;
+    this.publishedYear = publishedYear;
   }
 
   public int getId() {
@@ -21,11 +19,8 @@ public class Name {
     return name;
   }
 
-  public String getAddress() {
-    return address;
+  public int getPublishedYear() {
+    return publishedYear;
   }
 
-  public String getBankAccountInfo() {
-    return bankAccountInfo;
-  }
 }
