@@ -20,6 +20,10 @@ public class MovieServiceImpl implements MovieService {
   }
 
   public List<Movie> findByPublishedYear(Integer publishedYear) {
-    return movieMapper.findByPublishedYear(publishedYear);
+    if (publishedYear != null) {
+      return movieMapper.findByPublishedYear(publishedYear);
+    } else {
+      return movieMapper.findAll();
+    }
   }
 }

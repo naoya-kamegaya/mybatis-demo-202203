@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface MovieService {
 
-  List<Movie> findAll();
+//  List<Movie> findAll();
 
   List<Movie> findByPublishedYear(Integer publishedYear);
 }
