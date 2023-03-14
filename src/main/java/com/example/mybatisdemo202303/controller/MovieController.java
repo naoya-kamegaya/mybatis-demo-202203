@@ -18,7 +18,7 @@ public class MovieController {
 
   @GetMapping("/movies")
   public List<String> movies(@RequestParam(required = false) Integer published_year) {
-    if (published_year != 0) {
+    if (published_year != null) {
       return movieService.findByPublishedYear(published_year).stream().map(MovieResponse::new).map(MovieResponse::getName).toList();
     } else {
       return movieService.findAll().stream().map(MovieResponse::new).map(MovieResponse::getName).toList();
