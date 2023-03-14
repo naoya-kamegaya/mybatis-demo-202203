@@ -1,4 +1,4 @@
-package com.example.mybatisdemo202303;
+package com.example.mybatisdemo202303.entity;
 
 public class Name {
   private int id;

@@ -1,5 +1,7 @@
-package com.example.mybatisdemo202303;
+package com.example.mybatisdemo202303.controller;
 
+import com.example.mybatisdemo202303.entity.Name;
+import com.example.mybatisdemo202303.service.NameService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

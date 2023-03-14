@@ -1,4 +1,6 @@
-package com.example.mybatisdemo202303;
+package com.example.mybatisdemo202303.controller;
+
+import com.example.mybatisdemo202303.entity.Name;
 
 public class NameResponse {
   private String name;
