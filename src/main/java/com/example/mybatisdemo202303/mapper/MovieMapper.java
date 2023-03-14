@@ -1,7 +1,6 @@
 package com.example.mybatisdemo202303.mapper;
 
 import com.example.mybatisdemo202303.entity.Movie;
-import com.example.mybatisdemo202303.entity.Name;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -13,5 +12,5 @@ public interface MovieMapper {
   List<Movie> findAll();
 
   @Select("SELECT * FROM movies WHERE published_year = #{publishedYear}")
-  List<Movie> findPublishedYear(String publishedYear);
+  List<Movie> findByPublishedYear(String publishedYear);
 }
